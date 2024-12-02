@@ -1,7 +1,7 @@
 #include "DataColumns.h"
 
 bool DataColumns::loadFromFile(const std::string& filename) {
-    ifstream infile(filename);
+    std::ifstream infile(filename);
 
     if (!infile.is_open()) {
         std::cerr << "Failed to open the file." << std::endl;
